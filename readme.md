@@ -1,7 +1,7 @@
 # Личный проект «Типотека» [![Build status][travis-image]][travis-url]
 
 * Студент: [Михаил Голубев](https://up.htmlacademy.ru/nodejs/3/user/1197879).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Макаров](https://up.htmlacademy.ru/nodejs/3/user/429879).
 
 ---
 
