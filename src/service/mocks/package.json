@@ -1,0 +1,12 @@
+{
+  "name": "mocks",
+  "version": "1.0.0",
+  "description": "Программа, которая делает моки для типотеки",
+  "main": "service.js",
+  "scripts": {
+    "test": "test",
+    "start": "node ./service.js"
+  },
+  "author": "Golubev Mike",
+  "license": "ISC"
+}
