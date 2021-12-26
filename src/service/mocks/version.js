@@ -1,4 +1,4 @@
-const packageFile = require(`./package.json`);
+const packageFile = require(`../../../package.json`);
 
 module.exports = {
   name: `--version`,

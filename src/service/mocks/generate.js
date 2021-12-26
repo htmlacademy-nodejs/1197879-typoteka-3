@@ -83,7 +83,7 @@ module.exports = {
   run([countArg]) {
     const count = countArg || DEFAULT_COUNT;
     const mocks = generateMocks(count);
-    fs.writeFile(`./mocks.json`, JSON.stringify(mocks), (error) => {
+    fs.writeFile(`./src/service/mocks/mocks.json`, JSON.stringify(mocks), (error) => {
       if (error) {
         process.exit(1);
       }
