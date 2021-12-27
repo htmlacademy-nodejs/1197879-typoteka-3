@@ -6,7 +6,10 @@
   "scripts": {
     "test": "npm run eslint",
     "eslint": "eslint --ext .js src",
-    "start": "node ./src/service/service.js"
+    "start": "node ./src/service/service.js",
+    "help": "node ./src/service/mocks/service.js --help",
+    "version": "node ./src/service/mocks/service.js --version",
+    "generate": "node ./src/service/mocks/service.js --generate"
   },
   "repository": {
     "type": "git",
