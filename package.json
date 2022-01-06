@@ -7,9 +7,9 @@
     "test": "npm run eslint",
     "eslint": "eslint --ext .js src",
     "start": "node ./src/service/service.js",
-    "help": "node ./src/service/mocks/service.js --help",
-    "version": "node ./src/service/mocks/service.js --version",
-    "generate": "node ./src/service/mocks/service.js --generate"
+    "help": "node ./src/service/service.js --help",
+    "version": "node ./src/service/service.js --version",
+    "generate": "node ./src/service/service.js --generate"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "devDependencies": {
     "eslint": "8.5.0",
     "eslint-config-htmlacademy": "0.6.0"
+  },
+  "dependencies": {
+    "chalk": "4.1.2"
   }
 }

@@ -13,4 +13,4 @@ node_modules/
 
 # Директория с собранными файлами проекта
 build/
-src/service/mocks/mocks.json
+src/service/cli/mocks.json
