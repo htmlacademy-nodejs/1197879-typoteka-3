@@ -1,3 +1,5 @@
+'use strict';
+
 const DEFAULT_COUNT = 1;
 const ANNOUNCE_NUMBER = 5;
 const FULL_TEXT_MAX_NUMBER = 15;
@@ -51,6 +53,7 @@ const CATEGORIES = [
 ];
 
 const fs = require(`fs`);
+const chalk = require(`chalk`);
 const {randint} = require(`./randint`);
 
 const generateMocks = (count) => {
@@ -80,14 +83,14 @@ const generateMocks = (count) => {
 
 module.exports = {
   name: `--generate`,
-  run([countArg]) {
+  async run([countArg]) {
     const count = countArg || DEFAULT_COUNT;
     const mocks = generateMocks(count);
-    fs.writeFile(`./src/service/mocks/mocks.json`, JSON.stringify(mocks), (error) => {
-      if (error) {
-        process.exit(1);
-      }
-      process.exit(0);
-    });
+    try {
+      await fs.writeFile(`./src/service/cli/mocks.json`, JSON.stringify(mocks), () => {});
+      console.info(chalk.green(`Generating completed`));
+    } catch (error) {
+      console.info(chalk.red(`File writing error`));
+    }
   }
 };
