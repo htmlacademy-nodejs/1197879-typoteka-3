@@ -1,7 +1,8 @@
 'use strict';
 
+const DEFAULT_COMMAND = `--help`;
+
 const {Cli} = require(`./cli/cli.js`);
-const {DEFAULT_COMMAND} = require(`./cli/consts.js`);
 
 const userArguments = process.argv.slice(2);
 const userCommand = userArguments[0];
