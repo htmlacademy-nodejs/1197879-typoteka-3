@@ -6,7 +6,6 @@ const PUBLIC_DIR = `public`;
 const express = require(`express`);
 const path = require(`path`);
 
-
 const mainRouter = require(`./routes/main-routes.js`);
 const registerRouter = require(`./routes/register-routes.js`);
 const loginRouter = require(`./routes/login-routes.js`);
